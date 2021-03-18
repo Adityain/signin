@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+         .div-group {
+            padding: 12px;
+        border: 5px solid red;
+        margin: 12px;
+            width: 30%;
+            height: 50%;
+           margin-top: 20%;
+             margin: auto;
+            text-align: center;
+            background-color: green;
+      }
+      #form-div{
+        padding: 12px;
+        border: 5px solid yellow;
+        margin: 12px;
+        background-color: lightseagreen;
+      }
+
+      .center{
+        padding: 12px;
+        border: 3px solid silver;
+        margin: 12px;
+        background-color: violet;
+      }
+    </style>
+</head>
+
+<body>
+    <script>
+        function signup(){
+         var a= document.getElementById("Emailid").value;
+         var b= document.getElementById("pwdtxt").value;
+                 document.getElementById("lbl1").innerHTML=a;
+                 document.getElementById("lbl2").innerHTML=b;  
+        }
+     </script>
+    <div class="div-group">
+
+        
+        <form id="form-div" name="myform" onsubmit="signup()">
+        <!--    <div class="center">
+                <label>Name</label> &nbsp;
+                <input required type="text" name="nametxt" id="txt1" placeholder="Enter Name"/>
+            </div>
+            <div class="center">
+                <label>Phone no</label>&nbsp;
+                <input required type="text" name="phonetxt" placeholder="Enter Phone no" maxlength="10" minlength="10"/>
+            </div>
+          -->
+            <div class="center">
+                <label>Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input required type="email" name="email" id="Emailid" placeholder="Enter Email"/>
+            </div>
+            <div class="center"> 
+                <label>Password</label>&nbsp;
+                <input required type="text" id="pwdtxt" placeholder="Enter Password"/>
+            </div>
+
+            <div >         
+                <button>Submit</button>
+            </div>
+            <div >
+                <br>
+                <label>Don't Have Account</label>
+                <a href="Signup.html" >SignUp</a>         
+                              
+            </div>
+        </form>        
+    </div>
+
+</body>
+</html>
